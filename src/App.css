@@ -1,0 +1,7 @@
+.d-flex{
+  display: flex;
+}
+.p30{
+  padding: 30px;
+  list-style-type: none;
+}
