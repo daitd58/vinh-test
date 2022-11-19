@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Bai1 Giai thuat tach mang</h1>
+    <script>
+      function chunkArray(myArray, chunk_size) {
+        var index = 0;
+        var arrayLength = myArray.length;
+        var tempArray = [];
+
+        for (index = 0; index < arrayLength; index += chunk_size) {
+          myChunk = myArray.slice(index, index + chunk_size);
+          tempArray.push(myChunk);
+        }
+
+        return tempArray;
+      }
+         var result = chunkArray([1, 2, 3, 4, 5, 6, 7, 8,9,10], 3);
+      console.log(result);
+    </script>
+  </body>
+</html>

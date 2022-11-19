@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Độ sâu của mảng</h3>
+     <script>
+        function flatArray(arr,depth){
+            let newArray = arr.flat(depth);
+            console.log("Mảng mới",newArray.join());
+        }
+        const array = [1, 2, [3, 4, [5, 6]]];
+        flatArray(array,2);
+     </script>
+</body>
+</html>
