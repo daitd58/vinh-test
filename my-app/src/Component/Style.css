@@ -1,0 +1,12 @@
+.Header{
+    display: flex;
+}
+.List{
+    padding: 5px 40px;
+}
+.List a{
+    color: #737373;
+}
+.a{
+    text-decoration: none;
+}
