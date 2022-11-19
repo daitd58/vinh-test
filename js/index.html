@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>giai thuat</title>
+</head>
+<body>
+    <script>
+        arr = [1, 2, [3, 4, [5, 6]]]
+
+        function flatten(arr, depth){
+            let res1 = []
+            if (depth === 1){
+                for (var i = 0; i < arr.length; i++){
+                if (Array.isArray(arr[i])) {
+                    res1 = res1.concat(flattenArr(arr[i]))
+                } else {
+                    res1.push(arr[i]);
+                }
+                
+            }
+            } 
+            let res = []
+            for (let i = 0; i < arr.length; i++){
+                if (Array.isArray(arr[i])) {
+                    res.push(flatten(arr[i], depth - 1));
+                } else {
+                    res.push(arr[i]);
+                }
+            }
+            return res;
+        }
+
+        function flattenArr(arr){
+            let res = [];
+            for (var i = 0; i < arr.length; i++){
+                if (Array.isArray(arr[i])) {
+                    res = res.concat(flattenArr(arr[i]))
+                } else {
+                    res.push(arr[i]);
+                }
+            }
+            return res
+        }
+        console.log(flatten(arr,1))
+
+        //bai2 
+        function HandleArray(arr, size){
+            var result = [];
+            shuffle = function(o){
+                for (var x,y,z = o.length; 
+                        z; 
+                        x = parseInt(Math.random() * i), y = o[--i], o[i] = o[x], o[x]= y
+
+                );
+                return o
+            }
+            var myarray = shuffle(arr);
+            while(myarray.length){
+                result.push(myarray.splice(0, size));
+            }
+            return result
+        }
+        var result = arr([1,2,3,4,5,6,7,8],3)
+        console.log('result 2: ',result)
+    </script>
+</body>
+</html>
