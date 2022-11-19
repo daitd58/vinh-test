@@ -1,0 +1,31 @@
+{
+  "folders": [
+	{
+		"path": "../../../../FontEnd"
+	},
+	{
+		"path": "C:/Users/Admin/Desktop/FontendTest"
+	},
+	{
+		"path": "../../../../ReactjsFigma"
+	},
+	{
+		"path": "../../../../React"
+	},
+	{
+		"path": "../../../../ToDoApp"
+	},
+	{
+		"path": "../../../../ReactTimeSheet"
+	},
+	{
+		"path": "../../.."
+	},
+	{
+		"path": "../../../../test2"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "test"
+  }
+}
