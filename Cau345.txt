@@ -1,0 +1,35 @@
+*Cau1:
+function cau1(size){
+var index = 0;
+var myArray = [1,2,3,4,5,6,7,8,9,10]
+myArray = myArray.sort(() => Math.random() - 0.5)
+var arrayLength = myArray.length;
+var tempArray = [];
+
+for (index = 0; index < arrayLength; index += size) {
+    myChunk = myArray.slice(index, index+size);
+    tempArray.push(myChunk);
+}
+
+return tempArray;
+}
+var result = cau1(3);
+console.log(result);
+
+*Cau2:
+function cau2(){
+var a = '123';
+var b = '123';
+var s = a*1 + b*1;
+console.log(s.toString())
+}
+cau2();
+
+*Cau3:
+function cau3(array, fl){
+    console.log(array.flat(fl))
+}
+const arr2 = [1, 2, [3, 4, [5, 6]]];
+const arr3 = [1, 2, [3, 4, [5, 6]]];
+cau3(arr2,2)
+
