@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //bai1
+      function chunkArray(myArray1, chunk_size) {
+        var results = [];
+        shuffle = function (o) {
+          for (
+            var j, x, i = o.length;
+            i;
+            j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x
+          );
+          return o;
+        };
+        var myArray = shuffle(myArray1);
+        while (myArray.length) {
+          results.push(myArray.splice(0, chunk_size));
+        }
+        return results;
+      }
+      var result = chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3);
+      console.log(result);
+
+      // bai2
+      const a = "123";
+      function sum(a) {
+        return +a + +a;
+      }
+      var result1 = sum(a);
+      console.log(`${result1}`);
+
+      //bai3
+      function flatArray(arr, index) {
+        const [a, ...rest] = arr;
+      }
+    </script>
+  </body>
+</html>
